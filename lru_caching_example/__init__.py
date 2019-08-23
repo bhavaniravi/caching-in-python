@@ -16,8 +16,9 @@ def index():
     return "Hello"
 
 
+
 @app.route("/user/<uid>")
-# @lru_cache()
+@lru_cache()
 def get_user(uid):
 
     try:
